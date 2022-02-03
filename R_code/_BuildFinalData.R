@@ -17,7 +17,7 @@ source('R_code/paths.R')
 #########################################################################
 ## Build plan-level dataset
 #########################################################################
-source(paste0(path.code,"/1_Plan_Data.R"))
+source(paste0(path.code,"/1_Plan_Data_Alt.R"))
 source(paste0(path.code,"/2_Plan_Characteristics.R"))
 source(paste0(path.code,"/3_Service_Areas.R"))
 source(paste0(path.code,"/4_Penetration_Files.R"))
