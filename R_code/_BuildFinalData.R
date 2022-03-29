@@ -52,7 +52,7 @@ final.data <- final.data %>%
   left_join( star.ratings %>%
                select(-contract_name, -org_type, -org_marketing), 
              by=c("contractid", "year")) %>%
-  left_join( ma.penetration.data %>% ungroup() %>%
+  left_join( ma.penetration.data %>% ungroup() %>% select(-ssa) %>%
                rename(state_long=state, county_long=county), 
              by=c("fips", "year"))
 
